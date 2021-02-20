@@ -164,6 +164,7 @@
                     width: 310px;
                     position: relative;
                     border-radius: 15px;
+                    box-shadow: 0 0 5px #333;
                 }
 
                 #about::after {
@@ -222,6 +223,38 @@
                 left: 90px;
             }
         </style>
+    </section>
+
+    <section class="slide" id="girls">
+        <img src="pictures/sasha.jpg" alt="Alexandra Shinkevich" class="sasha">
+        <img src="pictures/anya.jpg" alt="Anna Seleznyova" class="anya">
+
+        <style>
+            #girls img {
+                width: 370px;
+                border-radius: 15px;
+                box-shadow: 0 0 15px black, 0 0 5px darkred;
+            }
+
+            .sasha {
+                float: left;
+                margin-top: -10px;
+            }
+
+            .anya {
+                float: right;
+                margin-top: 60px;
+            }
+        </style>
+    </section>
+    
+    <section class="slide">
+        <img src="pictures/work.jpg" alt="girl at work" class="cover full">
+    </section>
+
+    <section class="slide fine">
+        <div class="fine__bg cover"></div>
+        <h1 class="shout fine__title">Как так вышло?</h1>
     </section>
 
     <section class="slide fine">
@@ -323,6 +356,10 @@
     </section>
 
     <section class="slide">
+        <img src="pictures/sad-cat.jpg" alt="sad cat" class="cover full">
+    </section>
+
+    <section class="slide">
         <img src="pictures/forrest.jpg" alt="forrest gump" class="cover full">
     </section>
 
@@ -337,21 +374,47 @@
 
     <section class="slide" id="contact">
         <h2>Ссылки</h2>
+        <img src="pictures/qr-code.jpg" alt="qr-code for slides">
         <p>Twitter: <a href="https://twitter.com/metalwebdev">@metalwebdev</a></p>
         <p>Telegram: <a href="https://t.me/russian_plazma_drink">@russian_plazma_drink</a></p>
+        <p>Слайды: <a href="https://lenaryan.github.io/burnout/">вот тут</a></p>
 
         <style>
             #contact h2 {
                 margin-bottom: 40px;
             }
-            
+
             #contact a {
                 color: inherit;
+            }
+
+            #contact img {
+                float: right;
             }
         </style>
     </section>
 
+    <section class="slide" id="final">
+        <h1 class="shout">Спасибо за внимание!</h1>
 
+        <style>
+            #final {
+                background-color: #e79b10;
+                color: #333;
+            }
+
+            #final h1 {
+                text-shadow: none;
+                font-size: 120px;
+                margin: 0;
+            }
+
+            #final::after {
+                color: inherit;
+                text-shadow: none;
+            }
+        </style>
+    </section>
 
     <footer class="badge">
         <a href="https://github.com/shower/shower">Fork me on GitHub</a>

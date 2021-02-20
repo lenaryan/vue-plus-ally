@@ -4,58 +4,10 @@
     <title>Shower Presentation Engine</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
     <style>
         .shower {
             --slide-ratio: calc(16 / 9);
-        }
-
-        .fine__bg {
-            height: 100%;
-            width: 100%;
-            background-image: url(pictures/this-is-fine.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            filter: grayscale(1) invert(1) contrast(0.3);
-        }
-
-        .fine .fine__title {
-            margin: 0;
-            text-transform: uppercase;
-            color: white;
-            text-shadow: 0 0 80px black, 0 0 20px darkred;
-            font-size: 120px;
-        }
-
-        .slide.fine::after {
-            opacity: 0;
-        }
-
-        .slide::after {
-            background-image: none;
-            text-shadow: 0 0 15px black, 0 0 10px darkred;
-            font-weight: bold;
-            height: auto;
-            left: unset;
-            right: 40px;
-        }
-
-        .slide {
-            background-color: #666;
-            color: white;
-        }
-
-        .slide li::before {
-            color: inherit;
-        }
-
-        .slide h2 {
-            color: inherit;
-            text-shadow: 0 0 10px black, 0 0 5px darkred;
-        }
-
-        .progress::before {
-            background-color: rgba(0,0,0,0.5);
         }
     </style>
 </head>
@@ -71,6 +23,9 @@
         <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
         <figure>
             <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+            <figcaption class="copyright right white">
+                <a href="https://fiftyfootshadows.net">© John Carey</a>
+            </figcaption>
         </figure>
         <style>
             #cover h2 {
@@ -94,35 +49,16 @@
         </style>
     </section>
 
-    <section class="slide fine">
-        <div class="fine__bg cover"></div>
-        <h1 class="shout shrink fine__title">Первое впечатление</h1>
-    </section>
-
-    <section class="slide fine">
-        <div class="fine__bg cover"></div>
-        <h1 class="shout shrink fine__title">Коллеги</h1>
-    </section>
-    
-    <section class="slide fine">
-        <div class="fine__bg cover"></div>
-        <h1 class="shout shrink fine__title">Начальство</h1>
-    </section>
-
-    <section class="slide fine">
-        <div class="fine__bg cover"></div>
-        <h1 class="shout shrink fine__title">Рабочая обстановка</h1>
-    </section>
-
     <section class="slide">
-        <h2>Чеклист</h2>
-        <ul>
+        <h2>Shower key features</h2>
+        <ol>
             <li>Built on HTML, CSS and JavaScript</li>
-            <li class="next">Works in all modern browsers</li>
-            <li class="next">Themes are separated from engine</li>
-            <li class="next">Fully keyboard accessible</li>
-            <li class="next">Printable to PDF</li>
-        </ul>
+            <li>Works in all modern browsers</li>
+            <li>Themes are separated from engine</li>
+            <li>Fully keyboard accessible</li>
+            <li>Printable to PDF</li>
+        </ol>
+        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
     <section class="slide">
@@ -267,7 +203,7 @@
 
     <div class="progress"></div>
 
-    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <script src="shower/shower.js"></script>
     <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 
 </body>

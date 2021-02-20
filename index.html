@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Burnout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .shower {
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        img.full {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .fine__bg {
+            height: 100%;
+            width: 100%;
+            background-image: url(pictures/this-is-fine.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(1) invert(1) contrast(0.3);
+        }
+
+        .fine .fine__title {
+            margin: 0;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0 0 80px black, 0 0 20px darkred;
+            font-size: 120px;
+        }
+
+        .slide.fine::after {
+            opacity: 0;
+        }
+
+        .slide::after {
+            background-image: none;
+            text-shadow: 0 0 15px black, 0 0 10px darkred;
+            font-weight: bold;
+            height: auto;
+            left: unset;
+            right: 40px;
+        }
+
+        .slide {
+            background-color: #666;
+            color: white;
+        }
+
+        .slide li::before {
+            color: inherit;
+        }
+
+        .slide h1 {
+            color: inherit;
+            text-shadow: 0 0 80px black, 0 0 20px darkred;
+        }
+        .slide h2 {
+            color: inherit;
+            text-shadow: 0 0 10px black, 0 0 5px darkred;
+            font-family: 'Exo 2', sans-serif;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .progress::before {
+            background-color: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Как выгореть за 40 часов в неделю, не перерабатывая</h1>
+        <p>by Lena Ryan</p>
+    </header>
+
+    <section class="slide" id="main">
+        <h1>Как выгореть за 40 часов в неделю,</h1>
+        <p>не перерабатывая</p>
+
+        <style>
+            #main {
+                background-color: #e79b10;
+            }
+
+            #main::after {
+                opacity: 0;
+            }
+
+            #main h1 {
+                text-align: center;
+                font-size: 100px;
+                line-height: 1;
+                margin: 0 0 20px;
+                text-shadow: none;
+                color: #333;
+            }
+
+            #main p {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="about">
+        <div class="left-side">
+            <h2>Lena Ryan</h2>
+            <a href="https://t.me/russian_plazma_drink" class="tg-link">@russian_plazma_drink</a>
+            <ul>
+                <li>Фронтендер в компании AISA</li>
+                <li>Борец за вёрстку кнопок кнопками</li>
+                <li>Админ всех чатов в Веб-стандартах</li>
+                <li>Катаюсь на сноуборде и&nbsp;сёрф-скейте</li>
+                <li>Человек-обнимашка</li>
+            </ul>
+            </div>
+            <img src="pictures/me.jpg" alt="Lena Ryan">
+    
+            <style>
+                #about {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    background-color: #e79b10;
+                    color: #333;
+                }
+    
+                #about h2 {
+                    margin-bottom: 25px;
+                    text-shadow: none;
+                }
+    
+                #about .tg-link {
+                    position: relative;
+                    top: -30px;
+                    font-size: 23px;
+                    color: #666;
+                }
+    
+                #about li {
+                    line-height: 1.5;
+                    margin-bottom: 10px;
+                }
+    
+                #about img {
+                    display: block;
+                    width: 310px;
+                    position: relative;
+                    border-radius: 15px;
+                }
+
+                #about::after {
+                    text-shadow: none;
+                    color: inherit;
+                }
+            </style>
+    </section>
+
+    <section class="slide" id="depress">
+        <img src="pictures/this-is-fine.jpeg" alt="" class="cover full">
+        <h1 class="shout next">Based on true&nbsp;story</h1>
+
+        <style>
+            #depress.active img {
+                animation: depress 3s ease-in-out forwards 2s;
+            }
+
+            @keyframes depress {
+                0% {
+                    filter: grayscale(0) invert(0) contrast(1);
+                }
+
+                100% {
+                    filter: grayscale(1) invert(1) contrast(0.3);
+                }
+            }
+
+            #depress .shout {
+                font-size: 120px;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            #depress::after {
+                opacity: 0;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="quote">
+        <figure>
+            <blockquote>
+                <p>Выгорание (англ. burnout) — состояние физического и психического истощения, возникшее в ответ на эмоциональное перенапряжение при работе с людьми.</p>
+            </blockquote>
+            <figcaption>Википедия</figcaption>
+        </figure>
+
+        <style>
+            #quote figure {
+                padding-left: 30px;
+                padding-top: 80px;
+            }
+
+            #quote blockquote::before {
+                left: 90px;
+            }
+        </style>
+    </section>
+
+    <section class="slide fine">
+        <div class="fine__bg cover"></div>
+        <h1 class="shout shrink fine__title">Первое впечатление</h1>
+    </section>
+
+    <section class="slide">
+        <h2>Чеклист</h2>
+        <ul>
+            <li>Дайте себя очаровать</li>
+            <li class="next">Современный офис</li>
+            <li class="next">Чересчур улыбающийся начальник</li>
+            <li class="next">Красивые речи про успешный бизнес и долговременное сотрудничество</li>
+            <li class="next">Кикер. Возможно, пыльный.</li>
+        </ul>
+    </section>
+
+    <section class="slide fine">
+        <div class="fine__bg cover"></div>
+        <h1 class="shout shrink fine__title">Коллеги</h1>
+    </section>
+
+    <section class="slide">
+        <h2>Чеклист</h2>
+        <ul>
+            <li>«Ты выполняешь эту задачу уже пять минут, а баннер на сайте всё ещё не стоит!»</li>
+            <li class="next">Отдел продаж ван лав <3</li>
+            <li class="next">Подружитесь с коллегами из тех.отдела</li>
+        </ul>
+    </section>
+    
+    <section class="slide fine">
+        <div class="fine__bg cover"></div>
+        <h1 class="shout shrink fine__title">Начальство</h1>
+    </section>
+
+    <section class="slide">
+        <h2>Чеклист</h2>
+        <ul style="line-height: 1.7;">
+            <li>Контрол-фрик</li>
+            <li class="next">Нельзя опаздывать</li>
+            <li class="next">Учитесь работать!</li>
+            <li class="next">Ничего не понимает в вашей области</li>
+            <li class="next">Нужно больше золота!</li>
+            <li class="next">Чайка-менеджмент</li>
+            <li class="next">Вы — дешёвая рабочая сила</li>
+            <li class="next">Где время, Лебовски?</li>
+            <li class="next">[непереводимый фольклор]</li>
+        </ul>
+    </section>
+
+    <section class="slide fine">
+        <div class="fine__bg cover"></div>
+        <h1 class="shout shrink fine__title">Рабочая обстановка</h1>
+    </section>
+
+    <section class="slide">
+        <h2>Чеклист</h2>
+        <ul style="line-height: 1.7;">
+            <li>Ты волшебник, Гарри!</li>
+            <li class="next">За себя и за Сашку!</li>
+            <li class="next">100% продуктивность</li>
+            <li class="next">Никаких процессов</li>
+            <li class="next">Зато есть текучка</li>
+            <li class="next">Кикер — только для отвода глаз</li>
+            <li class="next">Обед тоже для работы</li>
+            <li class="next">Сальные шуточки <strike>в перерыве</strike></li>
+            <li class="next">Никаких перерывов!</li>
+        </ul>
+    </section>
+
+    <section class="slide fine">
+        <div class="fine__bg cover"></div>
+        <h1 class="shout shrink fine__title">Что дальше?</h1>
+    </section>
+
+    <section class="slide">
+        <h2>Вопросы для проверки</h2>
+        <ul>
+            <li>Хотите вставать утром на работу?</li>
+            <li class="next">Хотите видеть лица коллег и начальника?</li>
+            <li class="next">Можете ли по вечерам делать что-то, кроме откисания на диване в позе овоща?</li>
+            <li class="next">Вывозите эту жизнь?</li>
+            <li class="next">Часто улыбаетесь?</li>
+            <li class="next">Вы счастливы?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Шкала депрессии Бека</h2>
+        <img src="pictures/red-test.jpg" alt="test results" style="width: 90%">
+        <a style="color: inherit;" href="https://centrsna.by/articles/testy/shkala-depressii-beka/" class="copyright">Проверьте себя</a>
+    </section>
+
+    <section class="slide fine">
+        <div class="fine__bg cover"></div>
+        <h1 class="shout shrink fine__title">Вы великолепны!</h1>
+    </section>
+
+    <section class="slide">
+        <img src="pictures/forrest.jpg" alt="forrest gump" class="cover full">
+    </section>
+
+    <section class="slide">
+        <img src="pictures/kevin.jpg" alt="kevin from home alone" class="cover full">
+    </section>
+
+    <section class="slide">
+        <img src="pictures/green-test.jpg" alt="test results">
+        <a style="color: inherit;" href="https://centrsna.by/articles/testy/shkala-depressii-beka/" class="copyright">Проверьте себя</a>
+    </section>
+
+    <section class="slide" id="contact">
+        <h2>Ссылки</h2>
+        <p>Twitter: <a href="https://twitter.com/metalwebdev">@metalwebdev</a></p>
+        <p>Telegram: <a href="https://t.me/russian_plazma_drink">@russian_plazma_drink</a></p>
+
+        <style>
+            #contact h2 {
+                margin-bottom: 40px;
+            }
+            
+            #contact a {
+                color: inherit;
+            }
+        </style>
+    </section>
+
+
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>

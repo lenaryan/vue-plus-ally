@@ -1,25 +1,15 @@
 {
-  "name": "@shower/shower",
-  "description": "Shower HTML presentation engine",
-  "version": "3.0.0",
+  "name": "vue plus ally",
+  "description": "tech talk slides",
+  "version": "1.0.0",
   "author": {
-    "name": "Vadim Makeev",
-    "url": "https://pepelsbey.net/"
+    "name": "Lena Ryan"
   },
-  "homepage": "https://github.com/shower/shower",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shower/shower.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shower/shower/issues"
+    "url": "git://github.com/lenaryan/vue-plus-ally.git"
   },
   "license": "MIT",
-  "keywords": [
-    "shower",
-    "presentation",
-    "template"
-  ],
   "files": [
     "pictures/**",
     "index.html",

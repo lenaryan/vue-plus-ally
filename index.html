@@ -18,6 +18,7 @@
             --progress-size: 7px;
             font-family: 'Oswald', sans-serif;
             color: var(--light-grey);
+            line-height: 1.6;
         }
 
         .shower {
@@ -55,11 +56,11 @@
         .slide:after {
             background-image: none;
             left: unset;
-            right: 15px;
-            top: 63px;
+            right: 16px;
+            top: 65px;
             color: var(--dark);
             font-family: 'Oswald', sans-serif;
-            font-size: 35px;
+            font-size: 33px;
             width: 65px;
             height: auto;
             text-align: center;
@@ -70,12 +71,20 @@
         .slide h1, .slide h2, .slide h3 {
             font-family: 'Oswald', sans-serif;
             color: var(--light-grey);
-            margin: 0;
+            margin-top: 0;
             text-transform: uppercase;
         }
 
         .slide h2 {
             font-size: 45px;
+        }
+
+        .slide p {
+            margin-top: 0;
+        }
+
+        .slide a {
+            color: inherit;
         }
 
         .glass {
@@ -86,12 +95,14 @@
             overflow: hidden;
             position: relative;
             z-index: 1;
+            display: flex;
         }
 
         .content {
             position: relative;
             z-index: 1;
             padding: 65px;
+            flex-grow: 1;
         }
 
         .glass:before {
@@ -114,12 +125,17 @@
             height: 100%;
             object-fit: cover;
         }
+
+        .copyright {
+            bottom: 38px;
+            right: 12px;
+        }
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Как выгореть за&nbsp;40&nbsp;часов в&nbsp;неделю, не&nbsp;перерабатывая</h1>
+        <h1>Vue + A11y = ???</h1>
         <p>by Lena Ryan</p>
     </header>
 
@@ -156,12 +172,210 @@
         </div>
     </section>
 
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>очередной доклад про доступность, бла-бла</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>слайды с уже всем известной инфой, как делать доступно, и с людьми, говорящими про доступность</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>темы про доступность закончились? нет (слайд с понасенковым)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>история, как я пришла к этой теме (про тайтл иконки)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>про репу awesome vue</p>
+                <a href="https://github.com/vuejs/awesome-vue">https://github.com/vuejs/awesome-vue</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>сколько чего по разделам - с циферками</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>Всего 8 ссылок, заточенных специально под алли</p>
+                <ul>
+                    <li><a href="https://github.com/vue-a11y">Vue A11y project</a> - Vue.js community project to improve web accessibility</li>
+                    <li><a href="https://github.com/vue-a11y/vue-skip-to">vue-skip-to</a> - It helps people who only use the keyboard to jump to what matters most</li>
+                    <li><a href="https://github.com/vue-a11y/vue-axe">vue-axe</a> - Accessibility auditing for Vue.js applications</li>
+                    <li><a href="https://github.com/vue-a11y/vue-announcer">vue-announcer</a> - A simple way with Vue to announce any useful information for screen readers</li>
+                    <li><a href="https://github.com/maranran/eslint-plugin-vue-a11y">eslint-plugin-vue-a11y</a> - Static AST checker for accessibility rules on elements in .vue</li>
+                    <li><a href="https://github.com/theKashey/vue-focus-lock">vue-focus-lock</a> - It is a trap! A lock for a Focus. A11y util for scoping a focus</li>
+                    <li><a href="https://github.com/IBM/vue-a11y-calendar">vue-a11y-calendar</a> - Accessible, internationalized Vue calendar</li>
+                    <li><a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility">eslint-plugin-vuejs-accessibility</a> - Vue.js accessibility eslint-plugin managed by @vue-a11y</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>Vue A11y project</h2>
+                <a href="https://github.com/vue-a11y" class="copyright">Vue A11y project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-skip-to</h2>
+                <a href="https://github.com/vue-a11y/vue-skip-to" class="copyright">vue-skip-to</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-axe</h2>
+                <a href="https://github.com/vue-a11y/vue-axe" class="copyright">vue-axe</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-announcer</h2>
+                <a href="https://github.com/vue-a11y/vue-announcer" class="copyright">vue-announcer</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>eslint-plugin-vue-a11y</h2>
+                <a href="https://github.com/maranran/eslint-plugin-vue-a11y" class="copyright">eslint-plugin-vue-a11y</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-focus-lock</h2>
+                <a href="https://github.com/theKashey/vue-focus-lock" class="copyright">vue-focus-lock</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-a11y-calendar</h2>
+                <a href="https://github.com/IBM/vue-a11y-calendar" class="copyright">vue-a11y-calendar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>eslint-plugin-vuejs-accessibility</h2>
+                <a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility" class="copyright">eslint-plugin-vuejs-accessibility</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>что с алли в других разделах</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>показать, сколько библиотек в разделе, и сколько с алли в этом разделе</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>показать то, что найдено с алли</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>если репа неактивна, то указать на это</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>сравнение, сколько всего по разделам и сколько в итоге с алли</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <p>вывод, что алли ближе и проще, чем может показаться</p>
+            </div>
+        </div>
+    </section>
+
     <section class="slide" id="contact">
-        <h2>Ссылки</h2>
-        <img src="pictures/qr-code.jpg" alt="qr-code for slides">
-        <p>Twitter: <a href="https://twitter.com/metalwebdev">@metalwebdev</a></p>
-        <p>Telegram: <a href="https://t.me/russian_plazma_drink">@russian_plazma_drink</a></p>
-        <p>Слайды: <a href="https://lenaryan.github.io/burnout/">вот тут</a></p>
+        <div class="glass">
+            <div class="content">
+                <h2>Ссылки</h2>
+                <p>Twitter: <a href="https://twitter.com/metalwebdev">@metalwebdev</a></p>
+                <p>Telegram: <a href="https://t.me/russian_plazma_drink">@russian_plazma_drink</a></p>
+                <p>Слайды: <a href="https://lenaryan.github.io/vue-plus-ally/">вот тут</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h1 class="shout">Спасибо за внимание!</h1>
+            </div>
+        </div>
     </section>
 
     <footer class="badge">

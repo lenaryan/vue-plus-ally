@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         .shower {
@@ -85,6 +86,7 @@
 
         .slide a {
             color: inherit;
+            font-family: 'Play', sans-serif;
         }
 
         .glass {
@@ -118,6 +120,8 @@
         img {
             display: block;
             max-width: 100%;
+            border-radius: 25px;
+            border: 1px solid var(--light-grey);
         }
 
         img.full {
@@ -129,6 +133,27 @@
         .copyright {
             bottom: 38px;
             right: 12px;
+        }
+
+        .slide li::before {
+            content: '';
+            background-color: var(--light-green);
+            opacity: 1;
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 5px;
+            transform: translateX(calc(-100% - 0.8em));
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .slide ul {
+            font-family: 'Play', sans-serif;
         }
     </style>
 </head>
@@ -158,42 +183,177 @@
             #main h1 {
                 text-align: center;
                 font-size: 90px;
-                margin-top: 100px;
+                margin-top: 118px;
                 margin-bottom: 0;
             }
         </style>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="about">
         <div class="glass">
             <div class="content">
-                <h2>Lena Ryan</h2>
+                <h2>Лена Райан</h2>
+                <a class="tg-link" href="https://t.me/russian_plazma_drink">@russian_plazma_drink</a>
+                <div class="about-wrap">
+                    <img src="pictures/me.jpg" alt="Lena Ryan">
+                    <ul>
+                        <li>Продаю дрели в&nbsp;<a href="https://www.vseinstrumenti.ru/">"ВсеИнструменты.ру"</a></li>
+                        <li>Приношу новости в&nbsp;<a href="https://t.me/webstandards_ru">"Веб-стандарты"</a></li>
+                        <li>Борец за вёрстку кнопок кнопками</li>
+                        <li>Амбассадор WTM</li>
+                        <li>Мама, я скейтер</li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+        <style>
+            #about img {
+                width: 33%;
+                margin-right: 90px;
+            }
+
+            #about h2 {
+                margin-bottom: 0;
+            }
+
+            #about .tg-link {
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            #about ul {
+                position: relative;
+                top: -6px;
+                font-size: 26px;
+            }
+
+            .about-wrap {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 35px;
+            }
+        </style>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="kinda-main">
         <div class="glass">
             <div class="content">
-                <p>очередной доклад про доступность, бла-бла</p>
+                <h2>Очередной доклад про&nbsp;доступность</h2>
             </div>
         </div>
+
+        <style>
+            #kinda-main {
+                background-image: linear-gradient(to bottom, var(--dark) 25%, var(--light-green) 25%, var(--light-green) 75%, var(--dark) 75%)
+            }
+
+            #kinda-main.slide:after, #kinda-main.slide:before {
+                opacity: 0;
+            }
+
+            #kinda-main h2 {
+                text-align: center;
+                font-size: 75px;
+                line-height: 1.2;
+                margin-top: 104px;
+                margin-bottom: 0;
+            }
+        </style>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="ally-pics">
         <div class="glass">
             <div class="content">
-                <p>слайды с уже всем известной инфой, как делать доступно, и с людьми, говорящими про доступность</p>
+                <img src="pictures/landmark.jpg" alt="" class="ally-pic-1">
+                <img src="pictures/label.jpg" alt="" class="next ally-pic-2">
+                <img src="pictures/labelledby.jpg" alt="" class="next ally-pic-3">
+                <img src="pictures/describedby.jpg" alt="" class="next ally-pic-4">
+                <img src="pictures/menu.jpg" alt="" class="next ally-pic-5">
+                <img src="pictures/zahar.jpg" alt="" class="next ally-pic-6">
+                <img src="pictures/glasha.jpg" alt="" class="next ally-pic-7">
+                <img src="pictures/lera.jpg" alt="" class="next ally-pic-8">
+                <img src="pictures/vadim.jpg" alt="" class="next ally-pic-9">
             </div>
         </div>
+
+        <style>
+            #ally-pics img {
+                position: absolute;
+                max-width: 400px;
+                box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+            }
+
+            .ally-pic-1 {
+                top: 10%;
+                left: 7%;
+            }
+
+            .ally-pic-2 {
+                top: 7%;
+                left: 15%;
+            }
+
+            .ally-pic-3 {
+                top: 55%;
+                left: 20%;
+            }
+
+            .ally-pic-4 {
+                top: 25%;
+                right: 7%;
+            }
+
+            .ally-pic-5 {
+                top: 30%;
+                left: 30%;
+            }
+
+            .ally-pic-6 {
+                top: 8%;
+                left: 10%;
+            }
+
+            .ally-pic-7 {
+                top: 15%;
+                left: 40%;
+            }
+
+            .ally-pic-8 {
+                top: 30%;
+                right: 40%;
+            }
+
+            .ally-pic-9 {
+                top: 40%;
+                right: 8%;
+            }
+        </style>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="themes">
         <div class="glass">
             <div class="content">
-                <p>темы про доступность закончились? нет (слайд с понасенковым)</p>
+                <h2 class="shout shrink">Темы про доступность закончились?</h2>
             </div>
         </div>
+
+        <style>
+            #themes h2 {
+                font-size: 70px;
+                line-height: 1.2;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="ponas">
+        <img src="pictures/ponasenkov.jpg" alt="Понасенков" class="full">
+
+        <style>
+            #ponas.slide:after, #ponas.slide:before {
+                opacity: 0;
+            }
+        </style>
     </section>
 
     <section class="slide">

@@ -12,149 +12,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        .shower {
-            --dark: #34495E;
-            --light-green: #41B783;
-            --light-grey: #EEEEEE;
-            --progress-size: 7px;
-            font-family: 'Oswald', sans-serif;
-            color: var(--light-grey);
-            line-height: 1.6;
-        }
-
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-
-        .progress {
-            border-radius: 0 30px 30px 0;
-        }
-
-        .progress::before {
-            background-color: var(--light-green);
-            transform: none;
-        }
-
-        .slide {
-            position: relative;
-            padding: 25px 12px;
-            background-color: var(--dark);
-        }
-
-        .slide:before {
-            content: '';
-            display: block;
-            position: absolute;
-            background-color: var(--light-green);
-            left: unset;
-            right: 0;
-            top: 60px;
-            width: 90px;
-            height: 75px;
-            border-radius: 25px 0 0 25px;
-        }
-
-        .slide:after {
-            background-image: none;
-            left: unset;
-            right: 16px;
-            top: 65px;
-            color: var(--dark);
-            font-family: 'Oswald', sans-serif;
-            font-size: 33px;
-            width: 65px;
-            height: auto;
-            text-align: center;
-            line-height: 1;
-            z-index: 2;
-        }
-
-        .slide h1, .slide h2, .slide h3 {
-            font-family: 'Oswald', sans-serif;
-            color: var(--light-grey);
-            margin-top: 0;
-            text-transform: uppercase;
-        }
-
-        .slide h2 {
-            font-size: 45px;
-        }
-
-        .slide p {
-            margin-top: 0;
-        }
-
-        .slide a {
-            color: inherit;
-            font-family: 'Play', sans-serif;
-        }
-
-        .glass {
-            border: 1px solid var(--light-grey);
-            border-radius: 25px;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-            z-index: 1;
-            display: flex;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-            padding: 65px;
-            flex-grow: 1;
-        }
-
-        .glass:before {
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px) saturate(100%) contrast(100%) brightness(100%);
-            content: '';
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            z-index: 1;
-        }
-
-        img {
-            display: block;
-            max-width: 100%;
-            border-radius: 25px;
-            border: 1px solid var(--light-grey);
-        }
-
-        img.full {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .copyright {
-            bottom: 38px;
-            right: 12px;
-        }
-
-        .slide li::before {
-            content: '';
-            background-color: var(--light-green);
-            opacity: 1;
-            display: block;
-            width: 16px;
-            height: 16px;
-            border-radius: 5px;
-            transform: translateX(calc(-100% - 0.8em));
-        }
-
-        li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .slide ul {
-            font-family: 'Play', sans-serif;
-        }
+        .shower{--dark:#34495E;--light-green:#41B783;--light-grey:#EEE;--progress-size:7px;font-family:'Oswald',sans-serif;color:var(--light-grey);line-height:1.6;--slide-ratio:calc(16 / 9)}
+        .progress{border-radius:0 30px 30px 0}
+        .progress::before{background-color:var(--light-green);transform:none}
+        .slide{position:relative;padding:25px 12px;background-color:var(--dark)}
+        .slide:before{content:'';display:block;position:absolute;background-color:var(--light-green);left:unset;right:0;top:60px;width:90px;height:75px;border-radius:25px 0 0 25px}
+        .slide:after{background-image:none;left:unset;right:16px;top:65px;color:var(--dark);font-family:'Oswald',sans-serif;font-size:33px;width:65px;height:auto;text-align:center;line-height:1;z-index:2}
+        .slide h1,.slide h2,.slide h3{font-family:'Oswald',sans-serif;color:var(--light-grey);margin-top:0;text-transform:uppercase}
+        .slide h2{font-size:45px}
+        .slide p{margin-top:0}
+        .slide a{color:inherit;font-family:'Play',sans-serif}
+        .slide mark{background-color:var(--light-green);padding:0 7px;border-radius:8px;color:var(--dark)}
+        .glass{border:1px solid var(--light-grey);border-radius:25px;box-shadow:0 0 10px 0 rgba(0,0,0,0.2);height:100%;overflow:hidden;position:relative;z-index:1;display:flex}
+        .content{position:relative;z-index:1;padding:45px 65px;flex-grow:1}
+        .glass:before{background-color:rgba(255,255,255,0.1);backdrop-filter:blur(5px) saturate(100%) contrast(100%) brightness(100%);content:'';height:100%;position:absolute;width:100%;z-index:1}
+        img{display:block;max-width:100%;border-radius:25px;border:1px solid var(--light-grey)}
+        img.full{width:100%;height:100%;object-fit:cover}
+        .copyright{bottom:38px;right:12px}
+        .slide ul > li:lang(ru)::before{content:''}
+        .slide li::before{background-color:var(--light-green);opacity:1;display:block;top:14px;width:16px;height:16px;border-radius:5px;transform:translateX(calc(-100% - 0.8em))}
+        li{display:flex;align-items:center;margin-bottom:20px;position:relative}
+        .slide ul{font-family:'Play',sans-serif}
     </style>
 </head>
 <body class="shower list">
@@ -172,20 +50,9 @@
         </div>
 
         <style>
-            #main {
-                background-image: linear-gradient(to bottom, var(--dark) 25%, var(--light-green) 25%, var(--light-green) 75%, var(--dark) 75%)
-            }
-
-            #main.slide:after, #main.slide:before {
-                opacity: 0;
-            }
-
-            #main h1 {
-                text-align: center;
-                font-size: 90px;
-                margin-top: 118px;
-                margin-bottom: 0;
-            }
+            #main {background-image: linear-gradient(to bottom, var(--dark) 25%, var(--light-green) 25%, var(--light-green) 75%, var(--dark) 75%)}
+            #main.slide:after, #main.slide:before {opacity: 0;}
+            #main h1 {text-align: center;font-size: 90px;margin-top: 140px;margin-bottom: 0;}
         </style>
     </section>
 
@@ -208,31 +75,11 @@
         </div>
 
         <style>
-            #about img {
-                width: 33%;
-                margin-right: 90px;
-            }
-
-            #about h2 {
-                margin-bottom: 0;
-            }
-
-            #about .tg-link {
-                text-transform: uppercase;
-                font-size: 16px;
-            }
-
-            #about ul {
-                position: relative;
-                top: -6px;
-                font-size: 26px;
-            }
-
-            .about-wrap {
-                display: flex;
-                align-items: flex-start;
-                margin-top: 35px;
-            }
+            #about img{width:33%;margin-right:90px}
+            #about h2{margin-bottom:0}
+            #about .tg-link{text-transform:uppercase;font-size:16px}
+            #about ul{position:relative;top:-6px;font-size:26px}
+            .about-wrap{display:flex;align-items:flex-start;margin-top:35px}
         </style>
     </section>
 
@@ -244,21 +91,9 @@
         </div>
 
         <style>
-            #kinda-main {
-                background-image: linear-gradient(to bottom, var(--dark) 25%, var(--light-green) 25%, var(--light-green) 75%, var(--dark) 75%)
-            }
-
-            #kinda-main.slide:after, #kinda-main.slide:before {
-                opacity: 0;
-            }
-
-            #kinda-main h2 {
-                text-align: center;
-                font-size: 75px;
-                line-height: 1.2;
-                margin-top: 104px;
-                margin-bottom: 0;
-            }
+            #kinda-main{background-image:linear-gradient(to bottom,var(--dark) 25%,var(--light-green) 25%,var(--light-green) 75%,var(--dark) 75%)}
+            #kinda-main.slide:after,#kinda-main.slide:before{opacity:0}
+            #kinda-main h2{text-align:center;font-size:75px;line-height:1.2;margin-top:125px;margin-bottom:0}
         </style>
     </section>
 
@@ -278,56 +113,16 @@
         </div>
 
         <style>
-            #ally-pics img {
-                position: absolute;
-                max-width: 400px;
-                box-shadow: 0 0 10px rgb(0 0 0 / 60%);
-            }
-
-            .ally-pic-1 {
-                top: 10%;
-                left: 7%;
-            }
-
-            .ally-pic-2 {
-                top: 7%;
-                left: 15%;
-            }
-
-            .ally-pic-3 {
-                top: 55%;
-                left: 20%;
-            }
-
-            .ally-pic-4 {
-                top: 25%;
-                right: 7%;
-            }
-
-            .ally-pic-5 {
-                top: 30%;
-                left: 30%;
-            }
-
-            .ally-pic-6 {
-                top: 8%;
-                left: 10%;
-            }
-
-            .ally-pic-7 {
-                top: 15%;
-                left: 40%;
-            }
-
-            .ally-pic-8 {
-                top: 30%;
-                right: 40%;
-            }
-
-            .ally-pic-9 {
-                top: 40%;
-                right: 8%;
-            }
+            #ally-pics img{position:absolute;max-width:400px;box-shadow:0 0 10px #000}
+            .ally-pic-1{top:10%;left:7%}
+            .ally-pic-2{top:7%;left:15%}
+            .ally-pic-3{top:55%;left:20%}
+            .ally-pic-4{top:25%;right:7%}
+            .ally-pic-5{top:30%;left:30%}
+            .ally-pic-6{top:8%;left:10%}
+            .ally-pic-7{top:15%;left:40%}
+            .ally-pic-8{top:30%;right:40%}
+            .ally-pic-9{top:40%;right:8%}
         </style>
     </section>
 
@@ -339,20 +134,14 @@
         </div>
 
         <style>
-            #themes h2 {
-                font-size: 70px;
-                line-height: 1.2;
-            }
+            #themes h2 {font-size: 70px;line-height: 1.2;}
         </style>
     </section>
 
     <section class="slide" id="ponas">
         <img src="pictures/ponasenkov.jpg" alt="Понасенков" class="full">
 
-        <style>
-            #ponas.slide:after, #ponas.slide:before {
-                opacity: 0;
-            }
+        <style>#ponas.slide:after, #ponas.slide:before {opacity: 0;}
         </style>
     </section>
 
@@ -360,123 +149,36 @@
         <div class="glass">
             <div class="content">
                 <p>история, как я пришла к этой теме (про тайтл иконки)</p>
+                <img src="pictures/ekp.jpg" alt="Иконка телефона с номером телефона">
+                <a href="https://github.com/robcresswell/vue-material-design-icons">vue-material-design-icons</a>
             </div>
         </div>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="awesome">
         <div class="glass">
             <div class="content">
-                <p>про репу awesome vue</p>
-                <a href="https://github.com/vuejs/awesome-vue">https://github.com/vuejs/awesome-vue</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <p>сколько чего по разделам - с циферками</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <p>Всего 8 ссылок, заточенных специально под алли</p>
+                <h2>Awesome vue</h2>
                 <ul>
-                    <li><a href="https://github.com/vue-a11y">Vue A11y project</a> - Vue.js community project to improve web accessibility</li>
-                    <li><a href="https://github.com/vue-a11y/vue-skip-to">vue-skip-to</a> - It helps people who only use the keyboard to jump to what matters most</li>
-                    <li><a href="https://github.com/vue-a11y/vue-axe">vue-axe</a> - Accessibility auditing for Vue.js applications</li>
-                    <li><a href="https://github.com/vue-a11y/vue-announcer">vue-announcer</a> - A simple way with Vue to announce any useful information for screen readers</li>
-                    <li><a href="https://github.com/maranran/eslint-plugin-vue-a11y">eslint-plugin-vue-a11y</a> - Static AST checker for accessibility rules on elements in .vue</li>
-                    <li><a href="https://github.com/theKashey/vue-focus-lock">vue-focus-lock</a> - It is a trap! A lock for a Focus. A11y util for scoping a focus</li>
-                    <li><a href="https://github.com/IBM/vue-a11y-calendar">vue-a11y-calendar</a> - Accessible, internationalized Vue calendar</li>
-                    <li><a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility">eslint-plugin-vuejs-accessibility</a> - Vue.js accessibility eslint-plugin managed by @vue-a11y</li>
+                    <li class="next">Официальные руководства</li>
+                    <li class="next">Новости VueJS</li>
+                    <li class="next">Образовательные ресурсы</li>
+                    <li class="next">Подкасты</li>
+                    <li class="next">Блоги</li>
+                    <li class="next">YouTube-каналы</li>
+                    <li class="next">Конференции</li>
+                    <li class="next">Книги</li>
+                    <li class="next">Примеры проектов на VueJS</li>
+                    <li class="next">Коммьюнити разных стран</li>
+                    <li class="next"><mark>UI-библиотеки и фреймворки</mark></li>
                 </ul>
+                <a href="https://github.com/vuejs/awesome-vue" class="copyright">https://github.com/vuejs/awesome-vue</a>
             </div>
         </div>
-    </section>
 
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>Vue A11y project</h2>
-                <a href="https://github.com/vue-a11y" class="copyright">Vue A11y project</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-skip-to</h2>
-                <a href="https://github.com/vue-a11y/vue-skip-to" class="copyright">vue-skip-to</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-axe</h2>
-                <a href="https://github.com/vue-a11y/vue-axe" class="copyright">vue-axe</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-announcer</h2>
-                <a href="https://github.com/vue-a11y/vue-announcer" class="copyright">vue-announcer</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>eslint-plugin-vue-a11y</h2>
-                <a href="https://github.com/maranran/eslint-plugin-vue-a11y" class="copyright">eslint-plugin-vue-a11y</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-focus-lock</h2>
-                <a href="https://github.com/theKashey/vue-focus-lock" class="copyright">vue-focus-lock</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-a11y-calendar</h2>
-                <a href="https://github.com/IBM/vue-a11y-calendar" class="copyright">vue-a11y-calendar</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>eslint-plugin-vuejs-accessibility</h2>
-                <a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility" class="copyright">eslint-plugin-vuejs-accessibility</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <p>что с алли в других разделах</p>
-            </div>
-        </div>
+        <style>
+            #awesome ul {margin-left: 35px;columns: 2;}
+        </style>
     </section>
 
     <section class="slide">
@@ -511,6 +213,523 @@
         </div>
     </section>
 
+    <section class="slide" id="ally-links">
+        <div class="glass">
+            <div class="content">
+                <h2>A11y-ссылки</h2>
+                <ul>
+                    <li><a href="https://github.com/vue-a11y">Vue A11y project</a></li>
+                    <li><a href="https://github.com/vue-a11y/vue-skip-to">vue-skip-to</a></li>
+                    <li><a href="https://github.com/vue-a11y/vue-axe">vue-axe</a></li>
+                    <li><a href="https://github.com/vue-a11y/vue-announcer">vue-announcer</a></li>
+                    <li><a href="https://github.com/maranran/eslint-plugin-vue-a11y">eslint-plugin-vue-a11y</a></li>
+                    <li><a href="https://github.com/theKashey/vue-focus-lock">vue-focus-lock</a></li>
+                    <li><a href="https://github.com/IBM/vue-a11y-calendar">vue-a11y-calendar</a></li>
+                    <li><a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility">eslint-plugin-vuejs-accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <style>
+            #ally-links ul {
+                columns: 2;
+                margin-left: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="ibm-calendar">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-a11y-calendar</h2>
+
+                <div class="columns two">
+                    <figure>
+                        <img src="pictures/calendar.jpg" alt="vue calendar">
+                        <figcaption>Calendar</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="pictures/datepicker.jpg" alt="vue datepicker">
+                        <figcaption>Datepicker</figcaption>
+                    </figure>
+                </div>
+
+                <a href="https://github.com/IBM/vue-a11y-calendar" class="copyright">vue-a11y-calendar</a>
+            </div>
+        </div>
+
+        <style>
+            #ibm-calendar figure img {
+                height: 330px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content columns two">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Доступны с&nbsp;клавиатуры</li>
+                    <li class="next">Озвучка скринридером</li>
+                    <li class="next">Локализация на&nbsp;много языков</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Не ввести дату вручную</li>
+                    <li class="next">Сложности с&nbsp;кастомизацией</li>
+                    <li class="next">Последний коммит — октябрь&nbsp;2017</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-focus-lock</h2>
+                <pre>
+                    <code>&lt;FocusLock&gt;</code>
+                    <code>  You can not leave this form</code>
+                    <code>  &lt;ContactForm /&gt;</code>
+                    <code>&lt;/FocusLock&gt;</code>
+                </pre>
+                <a href="https://github.com/theKashey/vue-focus-lock" class="copyright">vue-focus-lock</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Focus trap!</li>
+                    <li class="next">Добавлена поддержка для Vue 3</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Не работает со скринридерами</li>
+                    <li class="next">Поддерживается не активно</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide" id="vue-ally-project">
+        <div class="glass">
+            <div class="content">
+                <h2>Vue A11y project</h2>
+                <img src="pictures/vue-ally-project.jpg" alt="vue ally project"/>
+                <a href="https://vue-a11y.com/" class="copyright">Vue A11y project</a>
+            </div>
+        </div>
+
+        <style>
+            #vue-ally-project img {
+                height: 360px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-skip-to</h2>
+                <pre>
+                    <code>&lt;template&gt;</code>
+                    <code>    &lt;VueSkipTo to="#main" label="Skip to main content" /&gt;</code>
+                    <code></code>
+                    <code>    &lt;!-- header, navigation, and more --&gt;</code>
+                    <code></code>
+                    <code>    &lt;main id="main"&gt;</code>
+                    <code>      &lt;!-- content --&gt;</code>
+                    <code>    &lt;/main&gt;</code>
+                    <code>&lt;/template&gt;</code>
+                </pre>
+                <a href="https://github.com/vue-a11y/vue-skip-to" class="copyright">vue-skip-to</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Отдельные версии для Vue&nbsp;2 и&nbsp;3</li>
+                    <li class="next">Кастомизируется</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Последний коммит для Vue&nbsp;2 — октябрь&nbsp;2020</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-focus-loop</h2>
+                <pre>
+                    <code>&lt;FocusLoop :is-visible="isOpen"&gt;</code>
+                    <code>  Your elements</code>
+                    <code>&lt;/FocusLoop&gt;</code>
+                </pre>
+                <a href="https://vue-focus-loop.surge.sh/" target="_blank">Демо</a>
+                <a href="https://github.com/vue-a11y/vue-focus-loop/tree/next" class="copyright">vue-focus-loop</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Отдельные версии для Vue&nbsp;2 и&nbsp;3</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Не работает со скринридерами</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide" id="dark-mode">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-dark-mode</h2>
+                <img src="pictures/dark-mode-1.jpg" alt="light mode" class="light">
+                <img src="pictures/dark-mode-2.jpg" alt="dark mode" class="dark">
+                <a href="https://github.com/vue-a11y/vue-dark-mode" class="copyright">vue-dark-mode</a>
+            </div>
+        </div>
+
+        <style>
+            #dark-mode img {
+                width: 47%;
+            }
+
+            #dark-mode .dark {
+                right: 65px;
+                bottom: 45px;
+                position: absolute;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content columns two">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Несколько цветовых схем</li>
+                    <li class="next">Выбор localStorage или sessionStorage для хранения темы</li>
+                    <li class="next">Настройка meta-тега theme-color</li>
+                    <li class="next">Работает со скринридером</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Версия для Vue&nbsp;3 в&nbsp;разработке</li>
+                    <li class="next">Последние коммиты — в&nbsp;2020&nbsp;году</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>eslint-plugin-vue-a11y</h2>
+                <div class="columns two next">
+                    <ul><h3>Плюсы</h3>
+                        <li class="next">Автоматическая проверка на&nbsp;доступность</li>
+                        <li class="next">Можно добавить свои правила</li>
+                        <li class="next">Не конфликтует с&nbsp;"babel-eslint"</li>
+                    </ul>
+                    <ul><h3>Минусы</h3>
+                        <li class="next">Проверка не всех аспектов</li>
+                        <li class="next">Последний коммит — май&nbsp;2019</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/maranran/eslint-plugin-vue-a11y" class="copyright">eslint-plugin-vue-a11y</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>eslint-plugin-vuejs-accessibility</h2>
+                <div class="columns two">
+                    <ul><h3>Плюсы</h3>
+                        <li class="next">Автоматическая проверка на&nbsp;доступность</li>
+                        <li class="next">Можно добавить свои правила</li>
+                        <li class="next">Не конфликтует с&nbsp;"babel-eslint"</li>
+                        <li class="next"><span>Обновлённая версия <a style="white-space:nowrap;" href="https://github.com/maranran/eslint-plugin-vue-a11y">eslint-plugin-vue-a11y</a></span></li>
+                    </ul>
+                    <ul><h3>Минусы</h3>
+                        <li class="next">Проверка не всех аспектов</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility" class="copyright">eslint-plugin-vuejs-accessibility</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide" id="vue-axe">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-axe</h2>
+                <img src="pictures/vue-axe.jpg" alt="vue axe console">
+                <a href="https://github.com/vue-a11y/vue-axe" class="copyright">vue-axe</a>
+            </div>
+        </div>
+
+        <style>
+            #vue-axe img {
+                height: 360px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Есть версия для Vue&nbsp;3</li>
+                    <li class="next">Подключение языков из&nbsp;
+                        <a href="https://github.com/dequelabs/axe-core/tree/develop/locales" target="_blank">axe-core</a>
+                    </li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Последние коммиты для Vue&nbsp;2 — декабрь&nbsp;2020</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide" id="multiselect">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-accessible-multiselect</h2>
+                <img src="pictures/multiselect-1.jpg" alt="multiselect">
+                <img src="pictures/multiselect-2.jpg" alt="multiselect hotkeys" class="hotkeys">
+                <a href="https://codesandbox.io/s/vue-accessible-multiselect-u7rdh?file=/src/main.js" class="demo-link">Демо</a>
+                <a href="https://github.com/vue-a11y/vue-accessible-multiselect" class="copyright">vue-accessible-multiselect</a>
+            </div>
+        </div>
+
+        <style>
+            #multiselect img {
+                width: 65%;
+            }
+
+            #multiselect .hotkeys {
+                position: absolute;
+                right: 65px;
+                bottom: 45px;
+            }
+
+            #multiselect .demo-link {
+                margin-top: 50px;
+                margin-left: 60px;
+                display: inline-block;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Доступен с клавиатуры</li>
+                    <li class="next">Работает со скринридерами</li>
+                    <li class="next">Кастомизация</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Последние коммиты — лето&nbsp;2020</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-announcer</h2>
+                <a href="https://github.com/vue-a11y/vue-announcer" class="copyright">vue-announcer</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-table</h2>
+                <a href="https://myena-vue-table.netlify.app/" target="_blank">Демо</a>
+                <a href="https://github.com/myENA/vue-table" class="copyright">vue-table</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-a11y-dialog</h2>
+                <a href="https://github.com/morkro/vue-a11y-dialog" class="copyright">vue-a11y-dialog</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-material-design-icons</h2>
+                <a href="https://github.com/robcresswell/vue-material-design-icons" class="copyright">vue-material-design-icons</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>Hooper</h2>
+                <a href="https://github.com/baianat/hooper" class="copyright">Hooper</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-combo-blocks</h2>
+                <a href="https://github.com/sssmi/vue-combo-blocks" class="copyright">vue-combo-blocks</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-toggles</h2>
+                <a href="https://github.com/juliandreas/vue-toggles" class="copyright">vue-toggles</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>Chakra UI Vue</h2>
+                <a href="https://github.com/chakra-ui/chakra-ui-vue" class="copyright">Chakra UI Vue</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>Vuetify</h2>
+                <a href="https://vuetifyjs.com/" class="copyright">Vuetify</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>Vuetensils</h2>
+                <a href="https://vuetensils.stegosource.com/" class="copyright">Vuetensils</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-m16y</h2>
+                <a href="https://vue-accessibility-demo.netlify.com/" target="_blank">Демо</a>
+                <a href="https://github.com/mayashavin/vue-m16y" class="copyright">vue-m16y</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-switch-button</h2>
+                <a href="https://github.com/marcus-herrmann/vue-switch-button" class="copyright">vue-switch-button</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>autocomplete-vue</h2>
+                <a href="https://github.com/trevoreyre/autocomplete/tree/master/packages/autocomplete-vue" class="copyright">autocomplete-vue</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-accessibility-toolbar</h2>
+                <a href="https://hendrixfan.github.io/vue-accessibility-toolbar/" target="_blank">Демо</a>
+                <a href="https://github.com/hendrixfan/vue-accessibility-toolbar" class="copyright">vue-accessibility-toolbar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-number-input</h2>
+                <a href="https://smwbtech.github.io/vue-number-input/" target="_blank">Демо</a>
+                <a href="https://github.com/smwbtech/vue-number-input" class="copyright">vue-number-input</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-autosuggest</h2>
+                <a href="https://darrenjennings.github.io/vue-autosuggest/" target="_blank">Демо</a>
+                <a href="https://github.com/darrenjennings/vue-autosuggest" class="copyright">vue-autosuggest</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-accessible-color-picker</h2>
+                <a href="https://vue-accessible-color-picker.netlify.app/" target="_blank">Демо</a>
+                <a href="https://github.com/kleinfreund/vue-accessible-color-picker" class="copyright">vue-accessible-color-picker</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-accessible-tabs</h2>
+                <a href="https://github.com/jakedohm/vue-accessible-tabs" class="copyright">vue-accessible-tabs</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
     <section class="slide">
         <div class="glass">
             <div class="content">
@@ -526,6 +745,7 @@
                 <p>Twitter: <a href="https://twitter.com/metalwebdev">@metalwebdev</a></p>
                 <p>Telegram: <a href="https://t.me/russian_plazma_drink">@russian_plazma_drink</a></p>
                 <p>Слайды: <a href="https://lenaryan.github.io/vue-plus-ally/">вот тут</a></p>
+                <p>Дизайн: <a href="https://t.me/eirelavfilatova">Валерия Филатова</a></p>
             </div>
         </div>
     </section>

@@ -37,6 +37,7 @@
         .slide.main:after,.slide.main:before{opacity: 0}
         .slide blockquote{margin-left:50px;}
         .slide blockquote::before{color: var(--light-green);font-size: 5em;margin: -0.15em 0 0 -80px;}
+        .main .main-img{position: absolute;right: 0;bottom: 0;width: 250px;box-shadow: 0 0 10px white;}
     </style>
 </head>
 <body class="shower list">
@@ -45,45 +46,6 @@
         <h1>Vue + A11y = ???</h1>
         <p>by Lena Ryan</p>
     </header>
-
-    <section class="slide main" id="main">
-        <div class="glass">
-            <div class="content">
-                <h1>Vue + A11y = ???</h1>
-            </div>
-        </div>
-
-        <style>
-            #main h1 {text-align: center;font-size: 90px;margin-top: 140px;margin-bottom: 0;}
-        </style>
-    </section>
-
-    <section class="slide" id="about">
-        <div class="glass">
-            <div class="content">
-                <h2>Лена Райан</h2>
-                <a class="tg-link" href="https://t.me/russian_plazma_drink">@russian_plazma_drink</a>
-                <div class="about-wrap">
-                    <img src="pictures/me.jpg" alt="Lena Ryan">
-                    <ul>
-                        <li>Продаю дрели в&nbsp;<a href="https://www.vseinstrumenti.ru/">"ВсеИнструменты.ру"</a></li>
-                        <li>Приношу новости в&nbsp;<a href="https://t.me/webstandards_ru">"Веб-стандарты"</a></li>
-                        <li>Борец за вёрстку кнопок кнопками</li>
-                        <li>Амбассадор WTM</li>
-                        <li>Мама, я скейтер</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <style>
-            #about img{width:33%;margin-right:90px}
-            #about h2{margin-bottom:0}
-            #about .tg-link{text-transform:uppercase;font-size:16px}
-            #about ul{position:relative;top:-6px;font-size:26px}
-            .about-wrap{display:flex;align-items:flex-start;margin-top:35px}
-        </style>
-    </section>
 
     <section class="slide main" id="main1">
         <div class="glass">
@@ -140,19 +102,73 @@
 
     <section class="slide" id="ponas">
         <img src="pictures/ponasenkov.jpg" alt="Понасенков" class="full">
+        <p class="copyright">*Физическое лицо, выполняющее функции иноагента</p>
 
-        <style>#ponas.slide:after, #ponas.slide:before {opacity: 0;}
+        <style>
+            #ponas.slide:after, #ponas.slide:before {opacity: 0;}
         </style>
     </section>
 
-    <section class="slide">
+    <section class="slide main" id="main">
         <div class="glass">
             <div class="content">
-                <p>история, как я пришла к этой теме (про тайтл иконки)</p>
-                <img src="pictures/ekp.jpg" alt="Иконка телефона с номером телефона">
-                <a href="https://github.com/robcresswell/vue-material-design-icons">vue-material-design-icons</a>
+                <h1>Vue + A11y = ???</h1>
             </div>
         </div>
+
+        <style>
+            #main h1 {text-align: center;font-size: 90px;margin-top: 140px;margin-bottom: 0;}
+        </style>
+    </section>
+
+    <section class="slide" id="about">
+        <div class="glass">
+            <div class="content">
+                <h2>Lena Ryan</h2>
+                <a class="tg-link" href="https://t.me/russian_plazma_drink">@russian_plazma_drink</a>
+                <div class="about-wrap">
+                    <img src="pictures/me.jpg" alt="Lena Ryan">
+                    <ul>
+                        <li>Делаю фронт в&nbsp;X5&nbsp;Group</li>
+                        <li>Приношу новости в&nbsp;<a href="https://t.me/webstandards_ru">"Веб-стандарты"</a></li>
+                        <li>Борец за вёрстку кнопок кнопками</li>
+                        <li>Амбассадор WTM</li>
+                        <li>Помогаю в&nbsp;WDA</li>
+                        <li>Мама, я скейтер</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            #about img{width:33%;margin-right:90px}
+            #about h2{margin-bottom:0}
+            #about .tg-link{text-transform:uppercase;font-size:16px}
+            #about ul{position:relative;top:-35px;font-size:26px}
+            .about-wrap{display:flex;align-items:flex-start;margin-top:35px}
+        </style>
+    </section>
+
+    <section class="slide" id="story">
+        <div class="glass">
+            <div class="content">
+                <h2>Кул стори</h2>
+                <img class="next icon" src="pictures/ekp.jpg" alt="phone icon">
+                <img src="pictures/icons.jpg" alt="prop title" class="next icon-text">
+                <a href="https://github.com/robcresswell/vue-material-design-icons" class="copyright">vue-material-design-icons</a>
+            </div>
+        </div>
+
+        <style>
+            #story .icon {
+                width: 180px;
+                margin-bottom: 20px;
+            }
+
+            #story .icon-text {
+                width: 88%;
+            }
+        </style>
     </section>
 
     <section class="slide" id="awesome">
@@ -222,10 +238,221 @@
         </style>
     </section>
 
+    <section class="slide main" id="main5">
+        <div class="glass">
+            <div class="content">
+                <h2>Помощники</h2>
+                <img src="pictures/help.jpg" alt="help meme" class="main-img">
+            </div>
+        </div>
+
+        <style>
+            #main5 h2{text-align:center;font-size:75px;line-height:1.2;margin-top:165px;margin-bottom:0}
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-skip-to</h2>
+                <pre>
+                    <code>&lt;template&gt;</code>
+                    <code>    &lt;VueSkipTo to="#main" label="Skip to main content" /&gt;</code>
+                    <code></code>
+                    <code>    &lt;!-- header, navigation, and more --&gt;</code>
+                    <code></code>
+                    <code>    &lt;main id="main"&gt;</code>
+                    <code>      &lt;!-- content --&gt;</code>
+                    <code>    &lt;/main&gt;</code>
+                    <code>&lt;/template&gt;</code>
+                </pre>
+                <a href="https://github.com/vue-a11y/vue-skip-to" class="copyright">vue-skip-to</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Отдельные версии для Vue&nbsp;2 и&nbsp;3</li>
+                    <li class="next">Кастомизируется</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Последний коммит для Vue&nbsp;2 — октябрь&nbsp;2020</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-focus-loop</h2>
+                <pre>
+                    <code>&lt;FocusLoop :is-visible="isOpen"&gt;</code>
+                    <code>  You can not leave this form</code>
+                    <code>  &lt;ContactForm /&gt;</code>
+                    <code>&lt;/FocusLoop&gt;</code>
+                </pre>
+                <a href="https://vue-focus-loop.surge.sh/" target="_blank">Демо</a>
+                <a href="https://github.com/vue-a11y/vue-focus-loop/tree/next" class="copyright">vue-focus-loop</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Focus trap!</li>
+                    <li class="next">Отдельные версии для Vue&nbsp;2 и&nbsp;3</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Не работает со скринридерами</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide" id="dark-mode">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-dark-mode</h2>
+                <img src="pictures/dark-mode-1.jpg" alt="light mode" class="light">
+                <img src="pictures/dark-mode-2.jpg" alt="dark mode" class="dark">
+                <a href="https://github.com/vue-a11y/vue-dark-mode" class="copyright">vue-dark-mode</a>
+            </div>
+        </div>
+
+        <style>
+            #dark-mode img {
+                width: 47%;
+            }
+
+            #dark-mode .dark {
+                right: 65px;
+                bottom: 45px;
+                position: absolute;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content columns two">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Несколько цветовых схем</li>
+                    <li class="next">Выбор localStorage или sessionStorage для хранения темы</li>
+                    <li class="next">Настройка meta-тега theme-color</li>
+                    <li class="next">Работает со скринридером</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Версия для Vue&nbsp;3 в&nbsp;разработке</li>
+                    <li class="next">Последние коммиты — в&nbsp;2020&nbsp;году</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide" id="announce">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-announcer</h2>
+                <img src="pictures/announce.png" alt="vue announcer">
+                <a href="https://codesandbox.io/s/vue-announcer-vue-project-z049t" target="_blank">Демо</a>
+                <a href="https://github.com/vue-a11y/vue-announcer" class="copyright">vue-announcer</a>
+            </div>
+        </div>
+
+        <style>
+            #announce img {
+                width: 85%;
+                margin-bottom: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content columns two">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Версии для Vue&nbsp;2 и&nbsp;3</li>
+                    <li class="next">Работает со скринридером</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide" id="m16">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-m16y</h2>
+                <img src="pictures/m16.webp" alt="media accessibility">
+                <a href="https://vue-accessibility-demo.netlify.com/" target="_blank">Демо</a>
+                <a href="https://github.com/mayashavin/vue-m16y" class="copyright">vue-m16y</a>
+            </div>
+        </div>
+
+        <style>
+            #m16 img {
+                height: 270px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Работает</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Доступно с&nbsp;клавиатуры частично</li>
+                    <li class="next">Последние коммиты — в&nbsp;2019&nbsp;году</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide" id="toolbar">
+        <div class="glass">
+            <div class="content">
+                <h2>vue-accessibility-toolbar</h2>
+                <img src="pictures/toolbar.png" alt="accessibility toolbar">
+                <a href="https://hendrixfan.github.io/vue-accessibility-toolbar/" target="_blank">Демо</a>
+                <a href="https://github.com/hendrixfan/vue-accessibility-toolbar" class="copyright">vue-accessibility-toolbar</a>
+            </div>
+        </div>
+
+        <style>
+            #toolbar img {
+                width: 270px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <div class="glass">
+            <div class="content">
+                <ul><h3>Плюсы</h3>
+                    <li class="next">Работает</li>
+                </ul>
+                <ul><h3>Минусы</h3>
+                    <li class="next">Недоступно с&nbsp;клавиатуры</li>
+                    <li class="next">Последние коммиты — в&nbsp;июле&nbsp;2019</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section class="slide main" id="main2">
         <div class="glass">
             <div class="content">
                 <h2>Проверка кода</h2>
+                <img src="pictures/check.jpeg" alt="check meme" class="main-img">
             </div>
         </div>
 
@@ -310,6 +537,7 @@
         <div class="glass">
             <div class="content">
                 <h2>Компоненты</h2>
+                <img src="pictures/components.jpg" alt="components meme" class="main-img">
             </div>
         </div>
 
@@ -663,6 +891,7 @@
         <div class="glass">
             <div class="content">
                 <h2>Библиотеки компонентов</h2>
+                <img src="pictures/library.jpg" alt="library meme" class="main-img">
             </div>
         </div>
 
@@ -721,219 +950,11 @@
         </div>
     </section>
 
-    <section class="slide main" id="main5">
-        <div class="glass">
-            <div class="content">
-                <h2>Помощники</h2>
-            </div>
-        </div>
-
-        <style>
-            #main5 h2{text-align:center;font-size:75px;line-height:1.2;margin-top:165px;margin-bottom:0}
-        </style>
-    </section>
-
     <section class="slide">
         <div class="glass">
             <div class="content">
-                <h2>vue-skip-to</h2>
-                <pre>
-                    <code>&lt;template&gt;</code>
-                    <code>    &lt;VueSkipTo to="#main" label="Skip to main content" /&gt;</code>
-                    <code></code>
-                    <code>    &lt;!-- header, navigation, and more --&gt;</code>
-                    <code></code>
-                    <code>    &lt;main id="main"&gt;</code>
-                    <code>      &lt;!-- content --&gt;</code>
-                    <code>    &lt;/main&gt;</code>
-                    <code>&lt;/template&gt;</code>
-                </pre>
-                <a href="https://github.com/vue-a11y/vue-skip-to" class="copyright">vue-skip-to</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <ul><h3>Плюсы</h3>
-                    <li class="next">Отдельные версии для Vue&nbsp;2 и&nbsp;3</li>
-                    <li class="next">Кастомизируется</li>
-                </ul>
-                <ul><h3>Минусы</h3>
-                    <li class="next">Последний коммит для Vue&nbsp;2 — октябрь&nbsp;2020</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-focus-loop</h2>
-                <pre>
-                    <code>&lt;FocusLoop :is-visible="isOpen"&gt;</code>
-                    <code>  You can not leave this form</code>
-                    <code>  &lt;ContactForm /&gt;</code>
-                    <code>&lt;/FocusLoop&gt;</code>
-                </pre>
-                <a href="https://vue-focus-loop.surge.sh/" target="_blank">Демо</a>
-                <a href="https://github.com/vue-a11y/vue-focus-loop/tree/next" class="copyright">vue-focus-loop</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <ul><h3>Плюсы</h3>
-                    <li class="next">Focus trap!</li>
-                    <li class="next">Отдельные версии для Vue&nbsp;2 и&nbsp;3</li>
-                </ul>
-                <ul><h3>Минусы</h3>
-                    <li class="next">Не работает со скринридерами</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide" id="dark-mode">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-dark-mode</h2>
-                <img src="pictures/dark-mode-1.jpg" alt="light mode" class="light">
-                <img src="pictures/dark-mode-2.jpg" alt="dark mode" class="dark">
-                <a href="https://github.com/vue-a11y/vue-dark-mode" class="copyright">vue-dark-mode</a>
-            </div>
-        </div>
-
-        <style>
-            #dark-mode img {
-                width: 47%;
-            }
-
-            #dark-mode .dark {
-                right: 65px;
-                bottom: 45px;
-                position: absolute;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content columns two">
-                <ul><h3>Плюсы</h3>
-                    <li class="next">Несколько цветовых схем</li>
-                    <li class="next">Выбор localStorage или sessionStorage для хранения темы</li>
-                    <li class="next">Настройка meta-тега theme-color</li>
-                    <li class="next">Работает со скринридером</li>
-                </ul>
-                <ul><h3>Минусы</h3>
-                    <li class="next">Версия для Vue&nbsp;3 в&nbsp;разработке</li>
-                    <li class="next">Последние коммиты — в&nbsp;2020&nbsp;году</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide" id="announce">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-announcer</h2>
-                <img src="pictures/announce.png" alt="vue announcer">
-                <a href="https://codesandbox.io/s/vue-announcer-vue-project-z049t" target="_blank">Демо</a>
-                <a href="https://github.com/vue-a11y/vue-announcer" class="copyright">vue-announcer</a>
-            </div>
-        </div>
-
-        <style>
-            #announce img {
-                width: 85%;
-                margin-bottom: 20px;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content columns two">
-                <ul><h3>Плюсы</h3>
-                    <li class="next">Версии для Vue&nbsp;2 и&nbsp;3</li>
-                    <li class="next">Работает со скринридером</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide" id="m16">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-m16y</h2>
-                <img src="pictures/m16.webp" alt="media accessibility">
-                <a href="https://vue-accessibility-demo.netlify.com/" target="_blank">Демо</a>
-                <a href="https://github.com/mayashavin/vue-m16y" class="copyright">vue-m16y</a>
-            </div>
-        </div>
-
-        <style>
-            #m16 img {
-                height: 270px;
-                margin-bottom: 20px;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <ul><h3>Плюсы</h3>
-                    <li class="next">Работает</li>
-                </ul>
-                <ul><h3>Минусы</h3>
-                    <li class="next">Доступно с&nbsp;клавиатуры частично</li>
-                    <li class="next">Последние коммиты — в&nbsp;2019&nbsp;году</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide" id="toolbar">
-        <div class="glass">
-            <div class="content">
-                <h2>vue-accessibility-toolbar</h2>
-                <img src="pictures/toolbar.png" alt="accessibility toolbar">
-                <a href="https://hendrixfan.github.io/vue-accessibility-toolbar/" target="_blank">Демо</a>
-                <a href="https://github.com/hendrixfan/vue-accessibility-toolbar" class="copyright">vue-accessibility-toolbar</a>
-            </div>
-        </div>
-
-        <style>
-            #toolbar img {
-                width: 270px;
-                margin-bottom: 20px;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <ul><h3>Плюсы</h3>
-                    <li class="next">Работает</li>
-                </ul>
-                <ul><h3>Минусы</h3>
-                    <li class="next">Недоступно с&nbsp;клавиатуры</li>
-                    <li class="next">Последние коммиты — в&nbsp;июле&nbsp;2019</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="glass">
-            <div class="content">
-                <p>вывод, что алли ближе и проще, чем может показаться</p>
+                <h2>Выводы</h2>
+                <img src="pictures/tom-kruz.jpeg" alt="tom cruise" class="next" style="margin: 0 auto;">
             </div>
         </div>
     </section>
@@ -953,13 +974,13 @@
     <section class="slide">
         <div class="glass">
             <div class="content">
-                <h1 class="shout">Спасибо за внимание!</h1>
+                <h2 class="shout" style="font-size:120px;">Спасибо за&nbsp;внимание!</h2>
             </div>
         </div>
     </section>
 
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+        <a href="https://github.com/lenaryan/vue-plus-ally">Fork me on GitHub</a>
     </footer>
 
     <div class="progress"></div>
